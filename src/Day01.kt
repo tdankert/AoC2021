@@ -1,5 +1,5 @@
 
-    fun main(args: Array<String>) {
+    fun main() {
 
         fun part1(input: List<Int>): Int {
             var counter = 0
