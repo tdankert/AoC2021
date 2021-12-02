@@ -1,5 +1,5 @@
 class Day02 {
-    fun part1(input: List<String>): Pair<Int, Int> {
+    fun part1(input: List<String>): Int {
         var position = Pair(0, 0);
 
         for (i in input) {
@@ -13,11 +13,10 @@ class Day02 {
             }
         }
 
-        println(position.first * position.second)
-        return position;
+        return position.first * position.second
     }
 
-    fun part2(input: List<String>): Pair<Int, Int> {
+    fun part2(input: List<String>): Int {
         var position = Pair(0, 0);
         var aim = 0
         for (i in input) {
@@ -33,14 +32,13 @@ class Day02 {
             }
         }
 
-        println(position.first * position.second)
-        return position;
+        return position.first * position.second
     }
 }
 
 fun main() {
     val day = Day02()
-    val input = readInput("Day02_test")
-    day.part1(input)
-    day.part2(input)
+    val input = readInput("Day02")
+    println(day.part1(input))
+    println(day.part2(input))
 }
