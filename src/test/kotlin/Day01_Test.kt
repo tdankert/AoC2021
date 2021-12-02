@@ -1,4 +1,3 @@
-import org.hamcrest.MatcherAssert
 import org.junit.Test
 import org.junit.Assert.assertEquals
 
