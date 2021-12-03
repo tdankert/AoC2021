@@ -5,7 +5,7 @@ import java.security.MessageDigest
 /**
  * Reads lines from the given input txt file.
  */
-fun readInput(name: String) = File("data", "$name.txt").readLines()
+fun readInput(name: String) = File("data", "$name.txt").readLines().toMutableList()
 
 fun readIntInput(name: String) = File("data", "$name.txt").readLines().map(String::toInt)
 
