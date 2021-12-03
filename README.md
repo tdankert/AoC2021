@@ -23,3 +23,5 @@ If you stuck with Kotlin-specific questions or anything related to this template
 [kotlin]: https://kotlinlang.org
 [slack]: https://surveys.jetbrains.com/s3/kotlin-slack-sign-up
 [template]: https://github.com/kotlin-hands-on/advent-of-code-kotlin-template
+
+Please keep in mind, that these are not optimal solutions, which are mostly done very messy before I even had my first coffee of the day ;)
