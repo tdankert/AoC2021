@@ -3,7 +3,7 @@ import org.junit.Assert.assertEquals
 
 class Day03Test {
     private val input =
-        listOf(
+        mutableListOf(
             "00100",
             "11110",
             "10110",
@@ -30,7 +30,7 @@ class Day03Test {
 
     @Test
     fun part2() {
-        val expected  = 900
+        val expected  = 230
 
         val actual = d.part2(input)
 
