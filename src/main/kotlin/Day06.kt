@@ -1,5 +1,4 @@
 import java.math.BigInteger
-import java.security.KeyStore
 
 class Day06 {
 
@@ -7,7 +6,6 @@ class Day06 {
         val list = input
         val days = 80
         for (i in 1..days) {
-//            println(list)?
             val tempList = mutableListOf<Int>()
 
             for (entry in input) {
@@ -40,16 +38,14 @@ class Day06 {
 
         for (i in 0..8)
             fishes.add(BigInteger.ZERO)
-        // Init
 
+        // Init
         for (entry in input) {
             fishes[entry] = fishes[entry] + BigInteger.ONE
         }
 
-
         for (d in 1..days){
             val zeroFish = fishes[0]
-
 
             fishes[0] = BigInteger.ZERO
             for (e in 0..7) {
