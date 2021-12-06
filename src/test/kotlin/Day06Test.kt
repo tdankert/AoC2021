@@ -1,5 +1,6 @@
 import org.junit.Test
 import org.junit.Assert.assertEquals
+import java.math.BigInteger
 
 class Day06Test {
     private val input =
@@ -11,16 +12,16 @@ class Day06Test {
     fun part1() {
         val expected = 5934
 
-        val actual = d.part1(input, 80)
+        val actual = d.part1(input)
 
         assertEquals(expected, actual)
     }
 
     @Test
     fun part2() {
-        val expected  = 26984457539
+        val expected  = BigInteger.valueOf(26984457539)
 
-        val actual = d.part1(input, 256)
+        val actual = d.part2(input)
 
         assertEquals(expected, actual)
     }
