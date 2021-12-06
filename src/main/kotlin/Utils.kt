@@ -9,6 +9,8 @@ fun readInput(name: String) = File("data", "$name.txt").readLines().toMutableLis
 
 fun readIntInput(name: String) = File("data", "$name.txt").readLines().map(String::toInt)
 
+fun readIntInputOneLine(name: String) = File("data", "$name.txt").readLines().first().split(',').map(String::toInt)
+
 /**
  * Converts string to md5 hash.
  */
