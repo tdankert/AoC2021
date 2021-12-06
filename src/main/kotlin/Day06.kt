@@ -67,6 +67,8 @@ class Day06 {
 fun main() {
     val day = Day06()
     var input = readIntInputOneLine("Day06")
-
+    day.part1(input)
     input = readIntInputOneLine("Day06")
+    day.part2(input)
+
 }
