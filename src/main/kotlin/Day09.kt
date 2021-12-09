@@ -61,8 +61,6 @@ class Day09 {
                 val valu = input[line][value]
                 if (isLowPoint(line, value)) {
                     lowpoints.add(point(line, value))
-
-                    println("ADDING ${line} $value")
                 }
             }
         }
@@ -82,12 +80,10 @@ class Day09 {
 
             var searchList = mutableListOf<point>(poin)
             var foundList = mutableListOf(poin)
-            println("${poin.x} ${poin.y}")
             while (searchList.size > 0) {
                 var p = searchList.first()
 
                 searchList.removeFirst()
-//                println ("SEARCHING at ${p.x} ${p.y} with value ${input[p.x][p.y]}")
                 if (input[p.x][p.y] != 8) {
 
                 //iterate until area does not grow anymore
@@ -128,7 +124,6 @@ class Day09 {
 
         }
 
-        println(areaSizes.sorted().reversed())
         return areaSizes.sorted().reversed().get(0) * areaSizes.sorted().reversed().get(1) * areaSizes.sorted().reversed().get(2)
     }
 
@@ -137,9 +132,6 @@ class Day09 {
 fun main() {
     val day = Day09()
     val inp = readIntArray("Day09")
-//    for (line in inp)
-//        println(line.first())
-//    var input = readInput("Day09")
     println(day.part1(inp))
     println(day.part2(inp))
 
